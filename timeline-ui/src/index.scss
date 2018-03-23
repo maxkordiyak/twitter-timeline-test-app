@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "./mixins.scss";
+
+$mdc-typography-font-family: 'Open Sans', sans-serif;
+$mdc-theme-primary: $sky;
+$mdc-theme-text-primary-on-primary: #fff;
+
+@import "material-components-web/material-components-web";
+
+:root {
+  --mdc-theme-primary: $sky;
+  --mdc-theme-text-primary-on-primary: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  color: #303133;
+  line-height: 1.5;
+  font-family: Open Sans, sans-serif;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+main {
+  position: relative;
+  padding-top: 63px;
+}
+
+.centered-grid {
+  @include mdc-layout-grid(tablet, 16px, 602px);
+}
+
+.mdc-typography--title.page-title {
+  border-bottom: 1px solid #dcdedd;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: initial;
+}
+
+.mdc-typography--body1 {
+  letter-spacing: initial;
+  line-height: 1.5;
+}
+
+.mdc-toolbar {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+
+  &__title {
+    color: #1dce6c;
+  }
+}
+
+a {
+  color: #297dfd;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-toolbar {
+  z-index: 402;
+  height: 63px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+
+  & .logo {
+    height: 40px;
+    width: auto;
+  }
+}
+
+.main-toolbarSection {
+  overflow: initial;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
+}
+
+.main-toolbarRow {
+  height: initial;
+  padding: 11px 20%;
+  flex-wrap: wrap;
+}
+
+.mdc-toolbar__section--align-start {
+  flex-grow: 4;
+}
+
+.mdc-toolbar__section--align-start a:first-child {
+  margin-top: 1px;
+  margin-right: 30px;
+}
+
+.mdc-toolbar__section--align-end {
+  align-items: center;
+  flex-grow: 3;
+}
+
+.mdc-toolbar__section--align-end a:not(.mdc-button) {
+  color: #969799;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &.active {
+    color: #303133;
+  }
+}
+
+.mdc-toolbar__section--align-end a.mdc-button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+  box-shadow: none;
+  border-radius: 4px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

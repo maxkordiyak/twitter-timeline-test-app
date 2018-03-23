@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100i");
+.no-data {
+  margin: 24px 0;
+  font-weight: 700;
+  text-align: center; }
+
+.shouldHide {
+  display: none; }
+
+.timeline-errorMessage {
+  color: red;
+  font-weight: 700; }
+
+.mdc-button.mdc-button--stroked {
+  border-radius: 0;
+  border: solid 1px #969799;
+  height: 45px;
+  text-transform: none;
+  font-size: 1rem;
+  width: 100%; }
+  .mdc-button.mdc-button--stroked::after {
+    background-color: #092240; }
+  .mdc-button.mdc-button--stroked::before {
+    background-color: transparent; }
+  .mdc-button.mdc-button--stroked:hover {
+    color: #fff;
+    background-color: #092240; }
+
+.search-title {
+  color: #fff;
+  padding: .7em;
+  text-align: center;
+  background: linear-gradient(45deg, #1f2426, #19446a); }
+
+.search-col {
+  display: flex;
+  align-items: flex-end; }
+
+.search-button {
+  min-width: 100% !important; }
+
+.search-grid {
+  padding: 0 !important; }
+
+.timeline-list {
+  list-style-type: none;
+  padding: 0; }
+  .timeline-list__item {
+    margin: 2em 0; }
+  .timeline-list__date {
+    line-height: 44px;
+    color: #969799;
+    opacity: .7;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic; }
+
+.timeline-list__content {
+  background: rgba(60, 60, 60, 0.4);
+  padding: 10px;
+  border-radius: 8px; }
+
+.timeline-list__text {
+  color: #1f2426; }
+
+.timeline-list__clock {
+  background-image: url("../../img/clock.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  height: 24px; }
