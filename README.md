@@ -8,3 +8,5 @@ server:
 ui:
 1) npm start - to start the app
 2) npm test - tests
+
+demo https://twitter-timeline-test-app.herokuapp.com/
